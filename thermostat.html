@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <title>SMASH THE THERMOSTAT</title>
+   <head>
+      <script language="JavaScript" type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script src="src/Thermostat.js"></script>
+      <script src="src/app.js"></script>
+
+  </head>
+  <body>
+  <h1> SMASH THE THERMOSTAT</h1>
+
+  <h3> The weather today in London is: </h3>
+  <div id = 'api-request'></div>
+
+  <br>
+   <form action="action_page.php">
+   <h3>Destination</h3>
+      <input id='destination'type="text" onclick='destination'>
+      <br><br>
+      <input type="submit" value="Submit">
+      </form>
+
+  <br>
+  <h3> TEMPERATURE </h3>
+  <div> <span id='temp'>999 </span> &deg;C
+
+  </div>
+
+<br>
+<input id ='up' type='button' value='up' onclick='increaseTemp()'>
+<input id ='down' type='button' value='down' onclick='decreaseTemp()'>
+<input id ='reset' type='button' value='reset' onclick='resetTemp()'>
+
+
+<br>
+<h2> POWER SAVE MODE </h2>
+<input id ='On' type='button' value='On' onclick='powerSaveOn()'>
+<input id ='Off' type='button' value='Off' onclick='powerSaveOff()'>
+
+
+
+  </body>
+</html>
+
+
+<!--JQUERY USE <script>$(function() { alert('hello') });</script> -->
